@@ -258,10 +258,11 @@ class CMOG_Zachalos_List_Table extends WP_List_Table {
     function get_sortable_columns(){ 
         $sortable_columns = array(
             'zaNum'     => array('zaNum',false),     //true means it's already sorted
-            'zaBook'    => array('zaBook',false),             
+            'zaBook'    => array('zaBook',false),              
+			'zaDesc'  => array('zaDesc',false),         
 			'zaDisplay'  => array('zaDisplay',false),               
 			'zaVerses'  => array('zaVerses',false),          
-			'zaId'  => array('zaId',false),
+			'zaId'  => array('zaId',true),
         ); 
         return $sortable_columns;
     }

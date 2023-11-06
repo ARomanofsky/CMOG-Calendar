@@ -14,6 +14,7 @@ require_once 'shortcodes/allfixedreadings.php';
 
 require_once 'shortcodes/tridion-readings.php';
 require_once 'shortcodes/readings_by_date.php';
+require_once 'shortcodes/readings_by_date_oc.php';
 require_once 'shortcodes/pascha-to-pentecost-readings.php';
 require_once 'shortcodes/movable-feast-by-year.php';
 require_once 'shortcodes/luke-readings.php';

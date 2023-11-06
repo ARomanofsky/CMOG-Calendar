@@ -72,10 +72,13 @@ $Week_day_n = $date["wday"];
 		  <?php $outputcal .= "<br /><hr />" . PHP_EOL;?>
 		  
 	<?php	
-$jd = unixtojd(mktime(0, 0, 0,$SMonth,$SDay,$SYear));
+$jd =  unixtojd(mktime(12, 1, 0,$SMonth,$SDay,$SYear)); echo "<pre>"; var_dump($jd); echo "</pre>"; 
+//$unixTimeStamp = mktime(0, 0, 0,$SMonth,$SDay,$SYear);
+//$jd = $unixTimeStamp / 86400 + 2440587.5;
  
-  $d = cal_from_jd($jd, CAL_GREGORIAN); // var_dump($jd);
-  $a = $core->calculateDay($d['month'], $d['day'], $d['year']);    //echo "<pre>"; var_dump($a); echo "</pre>"; 
+//$d = date_create($jd);  var_dump($jd);
+$d = cal_from_jd($jd, CAL_GREGORIAN); // var_dump($jd);
+  $a = $core->calculateDay($d['month'], $d['day'], $d['year']);   // echo "<pre>"; var_dump($a); echo "</pre>"; 
  //echo "<pre>"; var_dump($a);  
  $outputcal .= "<h2>" . $display_date["weekday"] . ", " .   $display_date["month"] . " "  .$display_date["mday"] . ", " . $display_date["year"]  . PHP_EOL;
   if ($a['saint']) {$outputcal .= " - " . $a['saint'] ;}

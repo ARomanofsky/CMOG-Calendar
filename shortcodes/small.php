@@ -56,7 +56,7 @@ $calendar_html .= "<small><center>" . PHP_EOL;
 $calendar_html .= "</center></td></tr></table></center></small> " . PHP_EOL;
  
   //       $calendar_html = "<table class='cal3' BORDER=1 BORDERCOLOR=black style=\"color:ffffff;\">";
-         $calendar_html .= "<table class='cal2' >";
+         $calendar_html .= "<table class='cal2' style='max-width: 300px'>";
          $calendar_html .= "<tr><td colspan=\"7\" align='center' class='dayhead'>" .
                            $month_name .
                            " " . $year . 

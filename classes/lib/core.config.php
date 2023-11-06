@@ -1,9 +1,9 @@
 <?php
 $core_var=array();
-$core_var['mysql_host']="localhost";
-$core_var['mysql_user']="root";
-$core_var['mysql_password']="";
-$core_var['mysql_database']="cmog_dd";
+$core_var['mysql_host']= DB_HOST;
+$core_var['mysql_user']= DB_USER; 
+$core_var['mysql_password']= DB_PASSWORD;
+$core_var['mysql_database']= DB_NAME;
 
 $core_var['timezone']="America/New_York";
 
@@ -31,6 +31,6 @@ $core_var['fasts'][4]="Dormition Fast";
 $core_var['fasts'][5]="Nativity Fast";
 
 $core_var['db_prefix']="cmog66_oc_";
-
+//$core_var['db_prefix']= $table_prefix;
 
 ?>
